@@ -1,4 +1,4 @@
-Hi! I'm Brian Zbriger, an aspiring software engineer working in Python.
+Hi! I'm **Brian Zbriger**, an aspiring software engineer working in Python.
 
 Feel free to contact me by [email] or on [LinkedIn].
 
