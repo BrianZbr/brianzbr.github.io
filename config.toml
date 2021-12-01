@@ -1,0 +1,14 @@
+baseURL = "https://brianzbr.github.io"
+languageCode = "en-US"
+title = "Brian Zbriger"
+theme = "my-sustain"
+
+[params]
+  avatar = "img/headshot.jpg"
+  author = "Brian Zbriger"
+  description = "Brian Zbriger's homepage"
+
+[params.social]
+  Github        = "BrianZbr"
+  Email         = "mail@brianz.page"
+  LinkedIn      = "brian-zbriger-70a31561"
