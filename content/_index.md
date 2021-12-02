@@ -4,7 +4,7 @@ Feel free to contact me by [email] or on [LinkedIn].
 
 Please check out my projets on [GitHub].
 
----
+
 
 ### [Backstage Payroll]
 A REST API for payroll data built with Flask and Postgres. Includes a Docker Compose file for easy deployment.
