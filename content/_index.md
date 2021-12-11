@@ -11,7 +11,7 @@ A REST API for payroll data built with Flask and Postgres. Includes a Docker Com
 
 ### [Geo Trivia]
 A text-based quiz game which generates trivia
-questions automatically based on an existing dataset of country facts. A live version can be played [on Replit].
+questions automatically based on an existing JSON dataset of country facts. A live version can be played [on Replit].
 
 
 [projects]: /projects
