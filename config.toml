@@ -13,5 +13,3 @@ theme = "my-sustain"
   Email         = "mail@brianz.page"
   LinkedIn      = "brian-zbriger-70a31561"
 
-[permalinks]
-  music = 'redirect_music.html'
