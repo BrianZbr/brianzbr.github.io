@@ -14,7 +14,31 @@ theme = "my-sustain"
   LinkedIn      = "brian-zbriger-70a31561"
 
 [[menu.main]]
+  name = "GitHub"
+  identifier = "GitHub"
+  weight = 100
+  url = "https://github.com/BrianZbr/"
+
+[[menu.main]]
+  name = "LeetCode"
+  identifier = "LeetCode"
+  weight = 100
+  url = "https://leetcode.com/BrianZbr/"
+
+[[menu.main]]
+  name = "LinkedIn"
+  identifier = "LinkedIn"
+  weight = 100
+  url = "https://linkedin.com/in/brian-zbriger-70a31561"
+
+[[menu.main]]
   name = "resume"
   identifier = "resume"
-  weight = 300
+  weight = 100
   url = "https://resume.creddle.io/embed/sddiip44nv/"
+
+[[menu.main]]
+  name = "email"
+  identifier = "email"
+  weight = 200
+  url = "mailto:mail@brianz.page"
