@@ -1,7 +1,7 @@
 baseURL = "https://www.brianz.page"
 languageCode = "en-US"
 title = "Brian Zbriger"
-theme = "my-sustain"
+theme = "hugo-sustain"
 
 [params]
   avatar = "img/headshot.jpg"
