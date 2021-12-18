@@ -1,10 +1,10 @@
-Hi! I'm **Brian Zbriger**, an aspiring software engineer working in Python.
+Hi! I'm **Brian Zbriger**, an IT professional currently obsessed with
+advancing my Python, data and DevOps skills.
 
-Feel free to contact me by [email] or on [LinkedIn].
+Please check out my projects below and on [GitHub], and feel free to
+contact me by [email] or on [LinkedIn].
 
-Please check out my projets on [GitHub].
-
-
+---
 
 ### [Backstage Payroll]
 A REST API for payroll data built with Flask and Postgres. Includes a Docker Compose file for easy deployment.
