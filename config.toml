@@ -35,7 +35,7 @@ theme = "hugo-sustain"
   name = "resume"
   identifier = "resume"
   weight = 100
-  url = "https://resume.creddle.io/embed/sddiip44nv/"
+  url = "resume.pdf"
 
 [[menu.main]]
   name = "email"
