@@ -2,7 +2,7 @@ baseURL = "https://www.brianz.page"
 languageCode = "en-US"
 title = "Brian Zbriger"
 theme = "hugo-sustain"
-googleAnalytics = "G-F8BW8D7W3P"
+googleAnalytics = "UA-216127530-1"
 
 [params]
   avatar = "img/headshot.jpg"
