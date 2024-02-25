@@ -5,12 +5,6 @@
   </div>
 </footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-{{- range .Site.Params.custom_js -}}
-  <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
-{{ end }}
-
 <!-- Default Statcounter code for www.brianz.page
 http://www.brianz.page -->
 <script type="text/javascript">
@@ -28,3 +22,9 @@ src="https://c.statcounter.com/12696271/0/3978df43/1/"
 alt="Web Analytics Made Easy - Statcounter"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->	
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+{{- range .Site.Params.custom_js -}}
+  <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}
