@@ -1,12 +1,15 @@
 baseURL = "https://www.brianz.page"
 languageCode = "en-US"
 title = "Brian Zbriger"
-theme = "hugo-sustain"
+theme = "my-sustain"
 
 [params]
   avatar = "img/headshot.jpg"
   author = "Brian Zbriger"
   description = "Brian Zbriger's homepage"
+  
+  [params.analytics]
+    goatcounter = "brianzbr.goatcounter.com"
 
 [params.social]
   Github        = "BrianZbr"
