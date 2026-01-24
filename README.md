@@ -9,10 +9,11 @@ A modern, responsive personal website built with [Hugo](https://gohugo.io/) stat
 
 ## 🚀 Technology Stack
 
-- **Static Site Generator**: Hugo v0.121+ (latest)
-- **Theme**: Customized version of [hugo-sustain](https://github.com/nurlansu/hugo-sustain)
+- **Static Site Generator**: Hugo v0.123+ (latest)
+- **Theme**: Custom `my-sustain` theme (based on hugo-sustain)
 - **Hosting**: GitHub Pages
 - **CI/CD**: GitHub Actions for automated deployment
+- **Analytics**: GoatCounter for privacy-friendly tracking
 - **Deployment**: Automatic on push to main branch
 
 ## 📁 Project Structure
@@ -21,9 +22,13 @@ A modern, responsive personal website built with [Hugo](https://gohugo.io/) stat
 brianzbr.github.io/
 ├── .github/
 │   └── workflows/
-│       └── gh-pages.yml          # GitHub Actions deployment workflow
+│       ├── gh-pages.yml          # Main deployment workflow
+│       └── preview.yml           # Preview deployment for PRs
 ├── content/
 │   └── _index.md                 # Homepage content
+├── layouts/
+│   └── partials/
+│       └── custom-head.html      # Custom analytics partial
 ├── static/
 │   ├── img/
 │   │   ├── headshot.jpg          # Profile picture
@@ -36,10 +41,8 @@ brianzbr.github.io/
 │   ├── music_redirect.html       # Music page redirect
 │   └── CNAME                     # Custom domain configuration
 ├── themes/
-│   ├── hugo-sustain/             # Git submodule (upstream theme)
-│   └── my-sustain/               # Custom theme modifications
+│   └── my-sustain/               # Custom theme (active)
 ├── config.toml                   # Hugo configuration
-├── .gitmodules                   # Git submodule configuration
 ├── .gitignore                    # Git ignore rules
 └── .nojekyll                     # Disable Jekyll processing
 ```
@@ -51,29 +54,28 @@ brianzbr.github.io/
 - **Base URL**: `https://www.brianz.page`
 - **Language**: English (US)
 - **Title**: Brian Zbriger
-- **Theme**: hugo-sustain
+- **Theme**: my-sustain (custom theme)
 - **Author**: Brian Zbriger
 - **Avatar**: `/img/headshot.jpg`
+- **Analytics**: GoatCounter configuration-based
 
 ### Social Links
 
 - **GitHub**: [BrianZbr](https://github.com/BrianZbr/)
 - **Email**: mail@brianz.page
 - **LinkedIn**: [brian-zbriger-70a31561](https://linkedin.com/in/brian-zbriger-70a31561)
-- **LeetCode**: [BrianZbr](https://leetcode.com/BrianZbr/)
 
 ### Navigation Menu
 
 The site includes links to:
 - GitHub Profile
-- LeetCode Profile
 - LinkedIn Profile
 - Resume (PDF)
 - Email Contact
 
 ## 🎨 Theme Customization
 
-This site uses a customized version of the hugo-sustain theme:
+This site uses a custom `my-sustain` theme based on hugo-sustain:
 
 ### Features
 - **Responsive Design**: Mobile-friendly layout
@@ -83,21 +85,24 @@ This site uses a customized version of the hugo-sustain theme:
 - **Bootstrap Integration**: Responsive grid system
 
 ### Theme Structure
-- **Upstream Theme**: `themes/hugo-sustain/` (Git submodule)
-- **Custom Modifications**: `themes/my-sustain/` (local customizations)
+- **Active Theme**: `themes/my-sustain/` (standalone custom theme)
+- **Custom Partials**: `layouts/partials/custom-head.html` for analytics
+- **Configuration-Based**: Analytics managed via `config.toml`
+- **No Submodules**: Simplified setup without Git complexity
 
 ## 🔄 Deployment Process
 
-### GitHub Actions Workflow
+### GitHub Actions Workflows
 
-The site is automatically deployed using GitHub Actions:
+#### Main Deployment (`gh-pages.yml`)
+- **Trigger**: Push to `main` branch
+- **Build**: Hugo builds site with minification
+- **Deploy**: Automatic deployment to GitHub Pages
 
-1. **Trigger**: Push to `main` branch or pull request
-2. **Steps**:
-   - Checkout repository with submodules
-   - Setup Hugo (latest version)
-   - Build site with minification
-   - Deploy to GitHub Pages (main branch only)
+#### Preview Deployment (`preview.yml`)
+- **Trigger**: Pull requests to `main`
+- **Build**: Tests build process
+- **Deploy**: Optional preview deployment
 
 ### Deployment Configuration
 
@@ -105,6 +110,7 @@ The site is automatically deployed using GitHub Actions:
 - **Hugo Version**: Latest
 - **Publish Directory**: `./public`
 - **Minification**: Enabled
+- **Submodules**: Not used (simplified setup)
 
 ## 📝 Content Management
 
@@ -122,25 +128,26 @@ The homepage (`content/_index.md`) includes:
 - **Documents**: Resume versions in PDF format
 - **Stylesheets**: Custom CSS for enhanced styling
 - **Redirects**: HTML redirect for music page
+- **Analytics**: GoatCounter configuration-based tracking
 
 ## 🛠️ Local Development
 
 ### Prerequisites
 
-- [Hugo](https://gohugo.io/getting-started/installing/) (v0.121+)
+- [Hugo](https://gohugo.io/getting-started/installing/) (v0.123+)
 - Git
 
 ### Setup
 
 1. Clone the repository:
    ```bash
-   git clone --recursive https://github.com/BrianZbr/brianzbr.github.io.git
+   git clone https://github.com/BrianZbr/brianzbr.github.io.git
    cd brianzbr.github.io
    ```
 
 2. Start development server:
    ```bash
-   hugo serve
+   hugo serve --bind 0.0.0.0 --port 1313
    ```
 
 3. Visit `http://localhost:1313` to preview changes
@@ -165,6 +172,11 @@ The generated site will be in the `public/` directory.
 - Links to live demos and repositories
 - Technology stack highlights
 
+### Analytics & Tracking
+- GoatCounter integration for privacy-friendly analytics
+- Configuration-based tracking setup
+- No cookies, GDPR compliant
+
 ### Contact Information
 - Multiple contact methods
 - Professional social media integration
@@ -183,6 +195,17 @@ The generated site will be in the `public/` directory.
 1. **Layout Changes**: Edit files in `themes/my-sustain/layouts/`
 2. **Style Updates**: Modify `themes/my-sustain/assets/`
 3. **Configuration**: Update `config.toml`
+4. **Custom Partials**: Add/modify files in `layouts/partials/`
+
+### Analytics Configuration
+
+1. **Update GoatCounter**: Modify `config.toml`:
+   ```toml
+   [params.analytics]
+     goatcounter = "your-subdomain.goatcounter.com"
+   ```
+2. **Add New Analytics**: Extend `layouts/partials/custom-head.html`
+3. **Disable Tracking**: Set analytics value to empty string
 
 ### Updating Resume
 
@@ -196,12 +219,14 @@ The generated site will be in the `public/` directory.
 - **Image Optimization**: Compressed profile images
 - **CDN Delivery**: GitHub Pages CDN
 - **Caching**: Proper cache headers via GitHub Pages
+- **Lightweight Analytics**: GoatCounter minimal script
 
 ## 🔒 Security Considerations
 
 - **No Server-Side Processing**: Static site only
 - **HTTPS Enforced**: Via GitHub Pages
-- **No Third-Party Scripts**: Minimal external dependencies
+- **Privacy-Friendly Analytics**: GoatCounter (no cookies)
+- **Minimal Dependencies**: Limited external scripts
 - **Content Security**: No user input processing
 
 ## 📝 License
@@ -225,4 +250,6 @@ This is a personal website. For issues or suggestions:
 
 **Last Updated**: January 2026  
 **Hugo Version**: Latest (via GitHub Actions)  
-**Theme**: hugo-sustain (customized)
+**Theme**: my-sustain (custom Hugo theme)  
+**Analytics**: GoatCounter (privacy-friendly)  
+**Deployment**: GitHub Pages with CI/CD
