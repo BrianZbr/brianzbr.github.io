@@ -20,12 +20,6 @@ theme = "hugo-sustain"
   url = "https://github.com/BrianZbr/"
 
 [[menu.main]]
-  name = "LeetCode"
-  identifier = "LeetCode"
-  weight = 100
-  url = "https://leetcode.com/BrianZbr/"
-
-[[menu.main]]
   name = "LinkedIn"
   identifier = "LinkedIn"
   weight = 100
