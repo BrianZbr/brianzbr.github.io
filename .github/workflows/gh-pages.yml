@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # Set a branch to deploy
+      - feature/january-2026-updates  # Test deployment from feature branch
   pull_request:
 
 jobs:
