@@ -17,6 +17,12 @@ theme = "my-sustain"
   LinkedIn      = "brian-zbriger-70a31561"
 
 [[menu.main]]
+  name = "blog"
+  identifier = "blog"
+  weight = 50
+  url = "/posts/"
+
+[[menu.main]]
   name = "GitHub"
   identifier = "GitHub"
   weight = 100
