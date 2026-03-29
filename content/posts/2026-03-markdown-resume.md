@@ -1,12 +1,12 @@
 ---
-title: "A Simple, No‑CSS Markdown Resume (with Pandoc + XeLaTeX)"
+title: "A Simpler Markdown Resume (with Pandoc + XeLaTeX)"
 date: 2026-03-28
 draft: false
 ---
 
 Mantaining a resume can be a pain. I've tried a lot of setups over the years. A basic word processor is good enough in many respects, but I don't like the lack of full version control or the fussiness of the formatting. I've also tried LaTex, but it's a lot to learn and I would much rather work in clean Markdown. 
 
-If you're set on Markdown, then the question is how to generate a presentable PDF. Pandoc is a great tool for this but getting it set up and managing the formatting can get [rather complicated](https://github.com/mszep/pandoc_resume). I've been searching for a way to get a good result with as few moving parts as possible and here's what I've settled on for now.
+If you're set on Markdown, then the question is how to generate a presentable PDF. Pandoc is a great tool for this but getting a work flow set up and managing the formatting can get [rather complicated](https://github.com/mszep/pandoc_resume). I've been searching for a way to get a good result with as few moving parts as possible and here's what I've settled on for now.
 
 1. Put a light YAML header at the top of `resume.md` to set margins, font, and size:
 ```yaml
