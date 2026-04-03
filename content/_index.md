@@ -1,19 +1,4 @@
-Hi! I'm **Brian Zbriger**, an IT professional currently obsessed with
-advancing my Python, data and DevOps skills.
-
-Here are some of my most recent projects.
-
----
-### [Backstage Payroll]
-A REST API for payroll data built with Flask and Postgres. Includes a Docker Compose file for easy deployment.
-
----
-
-### [Geo Trivia]
-A text-based quiz game which generates trivia
-questions automatically based on an existing JSON dataset of country facts. A live version can be played [on Replit].
-
----
+**Brian Zbriger**: Cloud Infrastructure Engineer integrating banks and fintech vendors with a focus on reliability, security, and Infrastructure as Code. Primarily working in AWS, Terraform, and Python, I am focused on deepening my knowledge of observability, automation, CI/CD, and scalable cloud infrastructure. 
 
 [projects]: /projects
 [email]: mailto:mail@brianz.page
