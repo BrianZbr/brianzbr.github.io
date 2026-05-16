@@ -1,10 +1,12 @@
 ---
 title: "FlatMonitor: An Experiment in Spec-Driven Development"
-date: 2026-05-11
+date: 2026-05-16
 draft: false
 ---
 
-I want to share what I learned from a recent passion project that was meant to serve multiple goals. While there are [a whole lot of open source uptime monitoring tools](https://github.com/Enapiuz/awesome-monitoring) out there already, I didn't find one that was a great fit for my use case, and knew I would learn a lot from building my own. At the same time I thought this would be a great opportunity to explore the concept of spec driven development (SDD) that I've been hearing so much about recently.
+I recently released a passion project, [FlatMonitor](https://github.com/BrianZbr/flatmonitor), that was meant to serve multiple goals. While there are [a whole lot of open source uptime monitoring tools](https://github.com/Enapiuz/awesome-monitoring) out there already, I didn't find one that was a great fit for my use case, and knew I would learn a lot from building my own. At the same time I thought this would be a great opportunity to explore the concept of spec driven development (SDD) that I've been hearing so much about recently.
+
+![FlatMonitor default dashboard](/img/default_dashboard.png)
 
 **The TLDR:**
 - [FlatMonitor](https://github.com/BrianZbr/flatmonitor)is a response to the limitations of Uptime Kuma's reliance on a database for both configuration and data storage.
