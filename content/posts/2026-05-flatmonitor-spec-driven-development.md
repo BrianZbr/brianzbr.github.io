@@ -9,7 +9,7 @@ I recently released a passion project, [FlatMonitor](https://github.com/BrianZbr
 ![FlatMonitor default dashboard](/img/default_dashboard.png)
 
 **The TLDR:**
-- [FlatMonitor](https://github.com/BrianZbr/flatmonitor)is a response to the limitations of Uptime Kuma's reliance on a database for both configuration and data storage.
+- [FlatMonitor](https://github.com/BrianZbr/flatmonitor) is a response to the limitations of Uptime Kuma's reliance on a database for both configuration and data storage.
 - This projecct was coded almost entirely by free AI models included with Windsurf, using a combination of spec-driven development (SDD) with test-driven development (TDD).
 - A spec helps keep LLM agents on track, but it cannot replace human iteration. 
 
