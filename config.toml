@@ -38,7 +38,7 @@ theme = "my-sustain"
   name = "resume"
   identifier = "resume"
   weight = 100
-  url = "resume.pdf"
+  url = "/resume.pdf"
 
 [[menu.main]]
   name = "email"
